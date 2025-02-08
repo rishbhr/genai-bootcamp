@@ -1,0 +1,38 @@
+Notes
+Week 1: Architecting GenAI
+
+Predictive ML vs GenAI
+When to choose which?
+-gen ai 
+    models are bigger
+    create open ended solutions
+    saas foundational model
+    millions/billions parameters for training
+    gen ai allows for a quicker start
+    (hard to control)
+-ml
+    removes the need to train your own models
+    predictive ml is more aligned to creating custom models and specific use cases
+    thousands/millions parameters for training
+    makes sense for large workloads and long term investment
+
+GEN AI Model Architect
+- in note book //TODO: picture of notes to be added to the folder
+
+All levels of technical diagramming
+3 levels
+
+TOGAF (open group architecture)
+    
+    3 types of diagrams: address the different layers of stakeholders that you will be talking to when creating a project
+        -conceptual: (c-suite)
+            (napkin scratching) how things are put together
+            at a high level how things feed to other things (prev. diagrams)
+        -logical: ()
+            architecting a blueprint
+            logical design
+            names, measurements and weights
+        -physical
+            bill of materials
+            names of services
+            ip addresses and locations of ec2 instances, arms of services
