@@ -36,3 +36,15 @@ TOGAF (by open group architecture)
             ip addresses and locations of ec2 instances, arms of services
 
 
+Homework for preweek
+-genai-architecting
+-sentence-constructor
+
+Hypothesis and technical uncertainty
+-evaluate the various ai models and which fits the usecase the best
+
+Technical Exploration
+-a prompt document incrementally with specific various models
+
+Final Outcomes
+-
