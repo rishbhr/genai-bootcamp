@@ -48,3 +48,20 @@ Technical Exploration
 
 Final Outcomes
 -
+
+-------------------
+Homework
+
+-Create a chat agent that guides to an answer but does not provide the answer
+-Technical uncertainty
+ -r&d process documentation
+ -what are the boundaries of what the ai agents can do
+ -build a teaching assistant
+  -the larger the task for an llm, the harder it can be for them to perform
+ -can the agent that we build be replicated
+ -how does the agent integrate into existing stack
+ -how does prompt documents from one ai to another
+ -prompt engineering
+  -document the instructions to for the ai agent
+ -features that are available for different ai agents
+ -
