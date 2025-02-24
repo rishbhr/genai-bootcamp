@@ -31,17 +31,39 @@ The formatting table will contain
 
 ### Sentencing Instructions
 - Do not provide particles in the sentence structure
+- Do not provide tenses or conjugations in the sentence structure
+- Example sentence structure:
+    Did you eat the food? → [Object] [Verb]?
+    The cat is on the table. → [Subject] [Location] [Verb].
+    I like apples. → [Subject] [Object] [Adjective].
+    There is a book on the desk. → [Location] [Object] [Verb].
+    I will go to school tomorrow. → [Time] [Subject] [Location] [Verb].
+    What are you doing? → [Question word] [Subject] [Verb]?
+    She is studying Japanese. → [Subject] [Object] [Verb].
+    I bought a new bag. → [Subject] [Object] [Verb].
+    Where is the station? → [Question word] [Object] [Verb]?
+    This book is interesting. → [Subject] [Adjective] [Verb].
+    Can you speak Japanese? → [Subject] [Object] [Ability verb]?
+    How much is this? → [Question word] [Subject] [Verb]?
+    I want to eat sushi. → [Subject] [Object] [Want-verb].
+    She is taller than him. → [Subject] [Comparison] [Adjective] [Verb].
+    I have never been to Japan. → [Subject] [Location] [Experience verb].
+    Please give me water. → [Request phrase] [Object].
+    If it rains, I will stay home. → [If-clause], [Result].
+    Let’s go to the park. → [Suggestion verb] [Location].
+    What time do you wake up? → [Question word] [Subject] [Verb]?
+    I am listening to music. → [Subject] [Object] [Verb].
 
 ### Clues and Considerations
 - Provide a bulletted list that is not nested
 - Talk about the vocabulary but try to leave out the japanese words because the student should be forced to reference the vocabulary table
 
 
-## Student Input 
-Bears are at the door, did you leave the garbage out?
-
 ## Examples
 Here are some example user input and assistant outputs, pay attention to the score and score reasons.
+
+## Student Input 
+Bears are at the door, did you leave the garbage out?
 
 <example>
     <user:input>
@@ -52,7 +74,7 @@ Here are some example user input and assistant outputs, pay attention to the sco
     - BAD: in the vocabulary table it did not show the japanese characters, the cells are just blank
     - BAD: the beginner sentence is uncessary, should jsut start showing the vocabulary table
     - BAD: In the clues we should not provide the polite form of verbs, because the student needs to figure that out.
-    - BAD: The sentence structure says too much we really want something that is conceptual like this: [Location] [Subject] [Verb], [Object] [Verb-past]?
+    - BAD: The sentence structure says too much we really want something that is conceptual like this: [Location] [Subject] [Verb], [Object] [Verb]?
     </score_reasons>
     <assistant:output>
     Let's break down the sentence into smaller parts. Here's a possible table of vocabulary to get you started:
@@ -99,12 +121,12 @@ Here are some example user input and assistant outputs, pay attention to the sco
     | to leave | 出す（だす） | Transitive Godan Verb |
 
     Sentence structure:
-    [Location] [Subject] [Verb], [Object] [Verb-past]?
+    [Location] [Subject] [Verb], [Object] [Verb]?
 
     Considerations:
     - This is a compound sentence with two parts connected by a comma
     - The first part is stating a location where something exists
-    - The second part is asking about a past action
+    - The second part is asking about a action
 
     Possible next steps:
     - attempt an answer
@@ -152,11 +174,11 @@ The cat is on the table, did you feed it?
 
 <example>
     <user_input>The cat is on the table, did you feed it?</user_input>
-    <score>10</score>
+    <score>8</score>
     <score_reasons>
     - GOOD: Doesn't provide verbose text at the start, and shows vocabulary immediately
     - GOOD: Shows conceptual sentence structure
-    - GOOD: Clues don't give away any of the tense of conjugations
+    - BAD: Sentence structure gives away any of the tense of conjugations
     </score_reasons>
     <assistant_output>
     Here's a table of vocabulary to help you get started:
@@ -167,11 +189,11 @@ The cat is on the table, did you feed it?
     食べる (たべる)	  | taberu        |	  to eat
     与える (あたえる) |	ataeru	      |   to give, to feed
     Sentence structure:
-    [Location] [Subject] [Verb], [Object] [Verb-past]?
+    [Location] [Subject] [Verb], [Object] [Verb]?
     Considerations:
     This is a compound sentence with two parts connected by a comma
     The first part is stating a location where something exists
-    The second part is asking about a past action
+    The second part is asking about a action
     Possible next steps:
     Attempt an answer
     Ask clues about location marking
@@ -180,3 +202,6 @@ The cat is on the table, did you feed it?
     Ask clues about verb conjugation
     </assistant_output>
 </example>
+
+## Student Input
+Student Input: Did you see the raven this morning? They were looking at our garden.
